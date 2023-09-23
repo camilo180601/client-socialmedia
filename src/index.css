@@ -1,0 +1,175 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.layout__navbar {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+}
+
+.layout__content {
+  margin-top: 0 auto;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.w-50 {
+  width: 600px;
+}
+
+.ml-50 {
+  margin-left: 70%;
+}
+
+.ml-90 {
+  margin-left: 90%;
+}
+
+.mr-90 {
+  margin-right: 90%;
+}
+
+.ml-100 {
+  margin-left: 470%;
+}
+
+.hover {
+  transition: all 0.3s ease-in-out;
+}
+
+.hover:hover {
+  transform: scale(1.1);
+}
+
+.none {
+  display: none;
+}
+
+.form-login {
+  margin: 20px;
+}
+
+.form-register {
+  margin: 20px;
+}
+
+.inactive {
+  color: #213547;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.login {
+  margin-left: 0 auto;
+  margin-right: 0 auto;
+}
+
+.logo {
+  display: block;
+  font-size: 80px;
+  margin-top: -32px;
+  font-weight: bolder;
+  min-width: 200px;
+}
+
+.embed-responsive-item {
+  width: 100%;
+  height: 100%;
+  max-height: 500px;
+  max-width: 700px;
+  background-color: black;
+  top: 0%;
+  left: 0%;
+  transform: rotate(0deg) scale(1.005);
+}
+
+.video-publication {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.video-div {
+  height: 100%;
+  width: 100%;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+@media (max-width: 768px) {
+  .form-login,
+  .form-register {
+    margin: 20px auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .login {
+    margin: 20px auto;
+    width: 50%;
+  }
+}
