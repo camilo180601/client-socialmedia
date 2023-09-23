@@ -1,27 +1,51 @@
-# React + TypeScript + Vite
+# Social Media Platform - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains the frontend code for a social media platform built with React and Vite.
 
-Currently, two official plugins are available:
+## Prerequisites
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Make sure you have the following components installed before proceeding:
 
-## Expanding the ESLint configuration
+- Node.js: [Download Node.js](https://nodejs.org/)
+- npm (Node Package Manager): Usually installed along with Node.js.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Installation
 
-- Configure the top-level `parserOptions` property like this:
+1. Clone this repository to your local machine:
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+   ```bash
+   git clone https://github.com/camilo180601/client-socialmedia.git
+Navigate to the project folder:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+cd client-socialmedia
+
+Install project dependencies using npm:
+
+npm install
+
+Configuration
+The frontend is configured to communicate with the backend API. Make sure to update the API endpoint in src/components/helpers/Global.jsx with the appropriate URL:
+
+url = 'http://localhost:3800/api/'; // Update this URL
+
+Usage
+Start the development server:
+
+npm run dev
+
+Open your browser and navigate to http://localhost:3800/api/ to see the API
+
+Building for Production
+To build the application for production, use the following command:
+
+npm run build
+
+This will create an optimized build in the dist directory.
+
+Contributions
+If you wish to contribute to this project, we welcome pull requests!
+
+
+
+Additional Information
+For more details about the application's functionality and components, please refer to the documentation or comments in the code.
